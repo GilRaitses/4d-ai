@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glacial Geophysics AI</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+
+        body {
+            font-family: 'EB Garamond', serif;
+            font-size: 18px;
+            color: #333;
+            background: #fdfdfd;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: white;
+            padding: 40px;
+            border: 1px solid #ddd;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 32px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            font-size: 22px;
+            margin-top: 20px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+        }
+
+        .content {
+            text-align: justify;
+            margin-bottom: 20px;
+            line-height: 1.7;
+        }
+
+        .button {
+            display: inline-block;
+            background: #003366;
+            color: white;
+            text-decoration: none;
+            padding: 12px 24px;
+            font-size: 18px;
+            margin-top: 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            border: none;
+        }
+
+        .button:hover {
+            background: #0055aa;
+        }
+
+        iframe {
+            width: 100%;
+            height: 800px;
+            border: none;
+            margin-top: 20px;
+        }
+    </style>
+    <script>
+        function downloadResumeAsPDF() {
+            var resumeWindow = window.open('gil_resume2025.html', '_blank');
+            setTimeout(function() {
+                resumeWindow.print();
+            }, 1000);
+        }
+    </script>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Glacial Geophysics AI</h1>
+        <p><em>Geospatial AI and Physics-Informed Machine Learning for Environmental Modeling</em></p>
+
+        <h2>About This Project</h2>
+        <div class="content">
+            Glacial Geophysics AI is an open research initiative focused on reconstructing past glacial landscapes using
+            remote sensing, geospatial AI, and physics-informed machine learning. The project integrates
+            LiDAR, satellite imagery, bathymetric surveys, and deep learning to model ice sheet movements, landscape evolution,
+            and conservation impacts over time. We are currently seeking funding, partnerships, and contributors from
+            nonprofit, commercial, and government sectors to expand this research into an interactive AI-powered tool for climate science and conservation.
+        </div>
+
+        <a href="https://github.com/gilraitses/glacial-geophysics-ai" class="button">View on GitHub</a>
+
+        <h2>About Me</h2>
+        <div class="content">
+            I am a research-driven technologist specializing in geospatial AI, physics-informed deep learning, and interactive environmental simulations.
+            My work spans marine telemetry, ice flow modeling, and data visualization, integrating GIS, ML-driven conservation analytics, and XR-based simulation tools.
+            I am actively seeking collaborations with researchers, organizations, and institutions interested in advancing the application of AI
+            to environmental science.
+        </div>
+
+        <h2>Resume</h2>
+        <div class="content">
+            View my resume below or download a PDF version.
+        </div>
+
+        <!-- Embed Resume -->
+        <iframe src="gil_resume2025.html"></iframe>
+
+        <!-- Download Resume as PDF -->
+        <button class="button" onclick="downloadResumeAsPDF()">Download as PDF</button>
+
+        <h2>Get Involved</h2>
+        <div class="content">
+            If you are interested in funding this research, collaborating, or contributing, please reach out.  
+            Email: <a href="mailto:gilraitses@gmail.com">gilraitses@gmail.com</a>  
+            GitHub: <a href="https://github.com/gilraitses/glacial-geophysics-ai">View the Project Repository</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
