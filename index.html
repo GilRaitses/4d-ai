@@ -3,10 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Glacial Morphology Analysis Research</title>
+  <title>AI-Driven 4D Modeling for Climate Reconstruction</title>
   <style>
-    /* Dark-to-glacial gradient background (from dark #121212 to dirty glacial blue #3b5b7a),
-       mobile friendly, Garamond-inspired */
     body {
       margin: 0;
       padding: 0;
@@ -15,17 +13,17 @@
       font-family: "Garamond", "Times New Roman", serif;
       line-height: 1.6;
     }
-    header.title-slide {
+    header {
       text-align: center;
       padding: 60px 20px;
       border-bottom: 2px solid #0077cc;
     }
-    header.title-slide h1 {
+    header h1 {
       margin: 0;
       font-size: 2.8em;
       color: #aee0f2;
     }
-    header.title-slide p {
+    header p {
       margin: 0.3em 0;
       font-size: 1.2em;
     }
@@ -56,11 +54,6 @@
       cursor: pointer;
       outline: none;
     }
-    svg {
-      width: 100%;
-      height: auto;
-      margin-top: 20px;
-    }
     a {
       color: #00d1ff;
       text-decoration: none;
@@ -77,232 +70,107 @@
   </style>
 </head>
 <body>
+
   <!-- Title Slide -->
-  <header class="title-slide">
-    <h1>Glacial Morphology Analysis Research</h1>
-    <p>Decoding Hidden Dynamics with Physics-Informed ML & Computational Modeling</p>
+  <header>
+    <h1>AI-Driven 4D Modeling for Climate Reconstruction</h1>
+    <p>Physics-informed machine learning for reconstructing glacial landscapes and environmental change.</p>
     <p>Gil Raitses</p>
     <p>Syracuse University | Researcher, Physics Department</p>
     <p>BioInspired Institute</p>
-    <p><a href="https://orcid.org/0009-0008-5182-0013" target="_blank" style="color: #aee0f2;">https://orcid.org/0009-0008-5182-0013</a></p>
+    <p><a href="https://orcid.org/0009-0008-5182-0013" target="_blank">ORCID Profile</a></p>
   </header>
   
   <div class="container">
-    <!-- Introduction: Vision & Overview -->
+
+    <!-- Project Overview -->
     <div class="section-card">
-      <h2>Vision & Overview</h2>
+      <h2>Project Overview</h2>
       <p>
-        Imagine an interactive 4D model that reconstructs the evolution of glacial landscapes in the Finger Lakes region—capturing both the physical terrain and the dynamic processes that shaped it over millennia.
+        This project develops a physics-informed machine learning system for **4D modeling** (3D spatial + time) of climate reconstruction. The Finger Lakes region serves as a case study, offering a well-preserved record of glacial history that helps refine computational models for simulating past environmental changes.
       </p>
       <p>
-        This platform leverages high-resolution remote sensing data (via Google Earth Engine) and physics-informed machine learning to translate existing geological maps, DEMs, and simulation models into an immersive environment. Users can explore how elliptical mounds (drumlins), moraines, and sediment layers evolve through time, test hypotheses about subglacial floods and sediment flows, and derive quantitative insights from video data.
+        By integrating **remote sensing, geospatial modeling, and AI-driven simulation**, the system reconstructs terrain evolution, simulates ice flow and sediment transport, and provides an interactive tool for researchers to analyze glacial dynamics.
       </p>
-      <details>
-        <summary>More Details on the Vision</summary>
-        <div>
-          <p>
-            The project’s core is a 4D reconstruction tool that not only documents historical glaciation events but also serves as a testbed for simulating future changes. By integrating datasets from LiDAR, DEMs, and published simulation models (such as FastScape, Yuan et al. 2019, and GoSPL studies), the model provides a granular, cross-scale perspective on glacial dynamics.
-          </p>
-          <p>
-            In practice, the platform will enable immersive exploration—allowing users to “fly” through reconstructed landscapes, observe the evolution of landforms, and interact with simulation parameters. The end result is an intuitive interface that bridges advanced computational modeling with real-world geological processes, serving as a powerful tool for research, education, and policy-making.
-          </p>
-        </div>
-      </details>
     </div>
 
-    <!-- Section 1: Proposed Methodology -->
+    <!-- Methodology -->
     <div class="section-card">
-      <h2>Proposed Methodology</h2>
+      <h2>Methodology</h2>
       <p>
-        My project reconstructs and analyzes glacial landforms—specifically, elliptical mounds (drumlins)—as proxies for inferring past ice flow dynamics and nonlinear physical processes.
+        The project integrates **AI-driven modeling with geophysical data** to reconstruct historical climate conditions and predict future environmental shifts.
       </p>
-      <details>
-        <summary>Extended Methodology & Approach</summary>
-        <div>
-          <p>
-            I begin by acquiring high-resolution 3D elevation data using LiDAR and remote sensing (e.g., Google Earth Engine). These Digital Elevation Models (DEMs) are used to accurately reconstruct glacial landforms.
-          </p>
-          <p>
-            Next, I integrate physics-informed neural networks (PINNs) and deep operator methods to embed conservation laws (mass, momentum, energy) into my simulations. This allows me to model key processes such as ice viscosity, sediment transport, and subglacial rheology.
-          </p>
-          <p>
-            The finite dataset of elliptical mounds (drumlins) permits a comprehensive audit, providing a high-fidelity reference for validating simulation outputs against field data.
-          </p>
-          <p>
-            <strong>Key Points:</strong>
-            <ul>
-              <li>3D reconstruction from DEMs</li>
-              <li>Inference of ice flow structures and mechanical stresses</li>
-              <li>Modeling nonlinear dynamics using PINNs</li>
-              <li>Validation through comprehensive datasets</li>
-            </ul>
-          </p>
-        </div>
-      </details>
+      <ul>
+        <li><strong>Data Collection:</strong> Acquiring high-resolution DEMs, satellite imagery, and geological maps.</li>
+        <li><strong>Physics-Informed ML:</strong> Using machine learning models that incorporate conservation laws to enhance simulation accuracy.</li>
+        <li><strong>4D Reconstruction:</strong> Developing time-dependent visualizations that model glacial formations and sediment transport.</li>
+      </ul>
     </div>
 
-    <!-- Section 2: Tools & Techniques -->
+    <!-- Project Timeline & Funding Goals -->
     <div class="section-card">
-      <h2>Tools & Techniques</h2>
-      <p>
-        My approach integrates advanced remote sensing, computational modeling, and immersive 3D visualization.
-      </p>
-      <details>
-        <summary>Extended Tools & Techniques</summary>
-        <div>
-          <p>
-            <strong>Remote Sensing & GIS:</strong> I use Google Earth Engine, QGIS, and ArcGIS to acquire and process high-resolution DEMs and satellite imagery.
-          </p>
-          <p>
-            <strong>Computational Modeling:</strong> My simulations are implemented in Python, MATLAB, and Julia, employing physics-informed neural networks (Raissi et al., 2019; Lu et al., 2021) to integrate key conservation laws.
-          </p>
-          <p>
-            <strong>3D Visualization & Immersive Interfaces:</strong> With certification in Unity and extensive experience with Blender, Cinema4D, and ZBrush, I create interactive visualization tools that enable immersive exploration of 4D models.
-          </p>
-        </div>
-      </details>
+      <h2>Project Timeline & Funding Goals</h2>
+      <h3>Phase 1: Data Collection & Preprocessing (6 months)</h3>
+      <p>Funding: $150,000</p>
+
+      <h3>Phase 2: ML Model Development (12 months)</h3>
+      <p>Funding: $300,000</p>
+
+      <h3>Phase 3: 4D Reconstruction & Simulation (9 months)</h3>
+      <p>Funding: $200,000</p>
+
+      <h3>Phase 4: Interactive Visualization & UI (6 months)</h3>
+      <p>Funding: $150,000</p>
+
+      <h3>Phase 5: Deployment & Validation (6 months)</h3>
+      <p>Funding: $100,000</p>
+
+      <h3>Total Project Duration & Funding</h3>
+      <p>3 years | $900,000</p>
     </div>
 
-    <!-- Section 3: Workflow & Project Phases -->
-    <div class="section-card">
-      <h2>Workflow & Project Phases</h2>
-      <p>
-        The project follows a phased approach—from existing data acquisition to 4D model development—that integrates simulation models with advanced ML to create an interactive tool.
-      </p>
-      <details>
-        <summary>Extended Workflow & Project Phases</summary>
-        <div>
-          <p><strong>Phase 1: Preliminary Data Acquisition & Analysis</strong></p>
-          <ul>
-            <li>Collect and process existing LiDAR, DEM, and satellite imagery from Google Earth Engine.</li>
-            <li>Harmonize these datasets and establish baseline terrain models.</li>
-            <li>Use published models (e.g., FastScape, Yuan et al. 2019, GoSPL) as initial parameters.</li>
-          </ul>
-          <p><strong>Phase 2: ML Model Development & Simulation</strong></p>
-          <ul>
-            <li>Train physics-informed neural networks on the integrated dataset.</li>
-            <li>Calibrate models using existing geological maps of drumlins, moraines, and sediment layers.</li>
-          </ul>
-          <p><strong>Phase 3: 4D Reconstruction & Interactive Visualization</strong></p>
-          <ul>
-            <li>Develop a dynamic 4D model (3D spatial + time) that captures both historical evolution and simulated processes (e.g., subglacial floods, sediment flows).</li>
-            <li>Build an immersive interface in Unity for interactive exploration and user-driven scenario testing.</li>
-          </ul>
-          <p><strong>Phase 4: Validation & Scaling</strong></p>
-          <ul>
-            <li>Perform targeted field validation with limited sampling.</li>
-            <li>Refine models based on new data and expand simulation capabilities.</li>
-          </ul>
-        </div>
-      </details>
-    </div>
-
-    <!-- Section 4: Partners & Adjacent Research -->
+    <!-- Partners & Adjacent Research -->
     <div class="section-card">
       <h2>Partners & Adjacent Research</h2>
-      <p>
-        I seek collaborations with institutions and research groups in glaciology, environmental modeling, and applied AI.
-      </p>
       <details>
-        <summary>Extended Partners & Collaborations</summary>
+        <summary>Extended Collaborations</summary>
         <div>
-          <p>
-            <strong>Local & Regional Institutions:</strong> Potential partners include the Museum of the Earth (Ithaca) and the Finger Lakes Land Trust, which offer regional expertise in glacial geomorphology.
-          </p>
-          <p>
-            <strong>NASA-Funded Research:</strong> My work complements large-scale studies in Antarctica and Greenland. I aim to connect with researchers at Brown, Cornell, and other institutions to integrate my high-resolution local data with global models.
-          </p>
-          <p>
-            <strong>Interdisciplinary Fields:</strong> My methods intersect with applied mathematics, engineering, harmonic analysis, and sedimentology, forming a strong basis for collaborative innovation.
-          </p>
+          <h3>Regional & Institutional Collaborations</h3>
+          <p>Potential partnerships with institutions studying past glaciation, such as the **Museum of the Earth** and the **Finger Lakes Land Trust**.</p>
+
+          <h3>Computational & Climate Research</h3>
+          <p>Integrating local high-resolution terrain data with established ice flow and climate models.</p>
+
+          <h3>Interdisciplinary Applications</h3>
+          <p>Collaboration opportunities with researchers in applied mathematics, engineering, sedimentology, and computational physics.</p>
         </div>
       </details>
     </div>
 
-    <!-- Section 5: Domain-Specific Background -->
-    <div class="section-card">
-      <h2>Domain-Specific Background</h2>
-      <p>
-        Analyzing glacial landforms requires insights from sedimentology, geomorphology, computational physics, and remote sensing.
-      </p>
-      <details>
-        <summary>Extended Domain Background</summary>
-        <div>
-          <p>
-            Detailed digital terrain analysis shows that the morphology of elliptical mounds (drumlins) encodes crucial information about historical ice dynamics. By coupling high-resolution remote sensing data with numerical simulation techniques, I extract features such as orientation, slope, and curvature—key indicators of sediment transport and subglacial processes.
-          </p>
-          <p>
-            This interdisciplinary approach enhances my ability to model glacial evolution and predict environmental changes, providing a robust foundation for developing effective remediation strategies.
-          </p>
-        </div>
-      </details>
-    </div>
-
-    <!-- Section 6: Citation Sources -->
-    <div class="section-card">
-      <h2>Citation Sources</h2>
-      <details>
-        <summary>Show All Citation Sources</summary>
-        <div>
-          <p><strong>Physics-Informed Neural Networks & Operator Methods:</strong></p>
-          <ul>
-            <li>Raissi, M., Perdikaris, P., & Karniadakis, G.E. (2019). "Physics-Informed Neural Networks: A Deep Learning Framework for Solving Forward and Inverse Problems Involving Nonlinear PDEs." Journal of Computational Physics, 378, 686–707. <a href="https://doi.org/10.1016/j.jcp.2018.10.045" target="_blank">DOI:10.1016/j.jcp.2018.10.045</a></li>
-            <li>Lu, K., Jin, X., & Karniadakis, G.E. (2021). "Deep Operator Networks." Communications in Mathematical Sciences, 19(1), 65–106. <a href="https://doi.org/10.1137/20M1339768" target="_blank">DOI:10.1137/20M1339768</a></li>
-          </ul>
-          <p><strong>Glacial Landscape Modeling & FastScape:</strong></p>
-          <ul>
-            <li>"FastScape: A Fast, Parallel, Open Source, Landscape Evolution Model." (2016). Geomorphology, 261, 25–36. <a href="https://doi.org/10.1016/j.geomorph.2016.02.012" target="_blank">DOI:10.1016/j.geomorph.2016.02.012</a></li>
-            <li>Evans, J. et al. "Digital Terrain Analysis in Geomorphology." <em>(Details to be confirmed)</em></li>
-          </ul>
-          <p><strong>GIS & Remote Sensing Methods:</strong></p>
-          <ul>
-            <li>Gorelick, N., Hancher, M., Dixon, M., Ilyushchenko, S., Thau, D., & Moore, R. (2017). "Google Earth Engine: Planetary-scale Geospatial Analysis for Everyone." Remote Sensing of Environment, 202, 18–27. <a href="https://doi.org/10.1016/j.rse.2017.06.031" target="_blank">DOI:10.1016/j.rse.2017.06.031</a></li>
-            <li>Tarolli, P., & Nativi, S. (2008). "A New Approach to Calculate Topographic Variables and Indices from Digital Elevation Models." International Journal of Geographical Information Science, 22(2), 133–152. <a href="https://doi.org/10.1080/13658810701525003" target="_blank">DOI:10.1080/13658810701525003</a></li>
-          </ul>
-          <p><strong>Historical Geodynamic Models & Simulation Tools:</strong></p>
-          <ul>
-            <li>Gerya, T.V. (2019). "Introduction to Numerical Modeling of Mantle Convection." Cambridge University Press.</li>
-            <li>Bercovici, D., & Ricard, Y. (2014). "On the Dynamics of Plate Tectonics." Reviews of Geophysics, 52(4), 556–595. <a href="https://doi.org/10.1002/2013RG000447" target="_blank">DOI:10.1002/2013RG000447</a></li>
-          </ul>
-        </div>
-      </details>
-    </div>
-
-    <!-- Final Section: About Gil Raitses -->
+    <!-- About Gil Raitses -->
     <div class="section-card">
       <h2>About Gil Raitses</h2>
-      <p>
-        I’m Gil Raitses, a graduate student in Applied Data Science at Syracuse University, working as a researcher in the Physics Department at the BioInspired Institute.
-      </p>
-      <p>
-        I develop advanced computer vision and machine learning tools in my neuro biophysics lab and support conservation efforts in a marine behavior analysis lab. I’m launching my own research project to reconstruct glacial geomorphology and environmental dynamics using physics-informed ML.
-      </p>
-      <p>
-        I’m actively seeking partnerships for joint proposals, proof-of-concept projects, and remote work opportunities.
-      </p>
-      <details>
-        <summary>More about me</summary>
-        <div>
-          <p>
-            With an interdisciplinary background bridging creative media and computational science, I offer a unique perspective on solving complex environmental challenges. My work integrates advanced AI techniques with high-resolution remote sensing data to create interactive simulations and predictive models that inform conservation policy and scientific research.
-          </p>
-          <p>
-            I have hands-on experience in a neuro biophysics lab developing computer vision tools to decode neural circuits, as well as in a marine behavior analysis lab where machine learning supports conservation efforts. My current project focuses on reconstructing glacial geomorphology using physics-informed neural networks and operator methods.
-          </p>
-          <p>
-            If you’re interested in advanced modeling support or custom AI applications tailored to your data, I’d love to collaborate.
-          </p>
-          <p>
-            Contact: gilraitses@gmail.com | (212) 365-0255 | GitHub: gilraitses<br>
-            ORCID: <a href="https://orcid.org/0009-0008-5182-0013" target="_blank" style="color: #aee0f2;">0009-0008-5182-0013</a>
-          </p>
-        </div>
-      </details>
+      <p><strong>M.S. Applied Data Science, Syracuse University</strong><br>
+         Researcher, Physics Department, BioInspired Institute</p>
+
+      <p>Developing AI-driven computational models for reconstructing glacial landscapes and simulating past ice flow. My work combines **remote sensing, geospatial modeling, and physics-informed ML** to analyze sediment transport, subglacial hydrology, and terrain evolution.</p>
+
+      <p>Seeking collaborations for joint proposals, proof-of-concept modeling, and AI applications in environmental research.</p>
+
+      <h3>Broader Research Context</h3>
+      <p>This project contributes to ongoing work in glacial dynamics and climate modeling. The Finger Lakes region provides a well-preserved record of past glaciation, offering a testbed for refining computational models used in larger-scale ice flow studies.</p>
+
+      <h3>Contact</h3>
+      <p>Email: gilraitses@gmail.com</p>
+      <p>Phone: (212) 365-0255</p>
+      <p><a href="https://orcid.org/0009-0008-5182-0013" target="_blank">ORCID Profile</a></p>
     </div>
+
   </div>
-  
+
   <footer>
     <p>© 2025 Gil Raitses. All Rights Reserved.</p>
   </footer>
+
 </body>
 </html>
