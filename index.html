@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Physics-Informed Neural Operator Framework for 4D Process Modeling</title>
+  <title>Physics-Informed Neural Operator Framework for Multi-Scale 4D Process Modeling</title>
   <style>
-    /* Dark-to-glacial gradient background (from dark #121212 to dirty glacial blue #3b5b7a),
+    /* Dark-to-glacial gradient background (from dark #121212 to dirty blue ice #3b5b7a),
        mobile friendly, Garamond-inspired */
     body {
       margin: 0;
@@ -61,10 +61,11 @@
       cursor: pointer;
       outline: none;
     }
-    svg {
+    img {
       width: 100%;
-      height: auto;
-      margin-top: 20px;
+      max-width: 800px;
+      display: block;
+      margin: 20px auto;
     }
     a {
       color: #00d1ff;
@@ -99,32 +100,36 @@
     <div class="section-card">
       <h2>Project Overview</h2>
       <p>
-        This project develops a physics-informed AI framework for creating dynamic 4D models that capture the evolution of glacial geomorphology. Focusing on the Finger Lakes region, the framework integrates high-resolution remote sensing data, geological maps, and established simulation models to quantitatively reconstruct how past glacial processes have shaped the landscape.
+        This project develops a physics-informed AI framework for 4D modeling of glacial geomorphology. Focused on the Finger Lakes region—a natural laboratory with a rich record of glacial processes shaped by depositional events from the Catskills delta and ancient inland seas—the framework integrates high-resolution remote sensing data, geological maps, and established simulation models to quantitatively reconstruct landscape evolution.
       </p>
       <p>
-        The system not only reconstructs historical landform evolution but also provides an interactive platform to simulate and test dynamic processes, offering detailed insights into ice flow, sediment transport, and subglacial dynamics.
+        The system provides interactive visualizations that capture both static morphology and dynamic evolution, enabling researchers to explore ice flow, sediment transport, and subglacial processes in detail.
       </p>
+      <!-- NASA Earth Observatory image of Finger Lakes -->
+      <img src="https://eoimages.gsfc.nasa.gov/images/imagerecords/144000/144026/fingerlakes_20100619.jpg" alt="The Icy Origins of the Finger Lakes" />
     </div>
 
     <!-- Methodology -->
     <div class="section-card">
       <h2>Methodology</h2>
       <p>
-        My approach combines data-driven, physics-informed machine learning with advanced geospatial analysis to build a comprehensive 4D model of glacial landscape evolution.
+        My approach combines data-driven, physics-informed machine learning with advanced geospatial analysis to reconstruct and simulate glacial landscape dynamics.
       </p>
       <ul>
-        <li><strong>Data Acquisition:</strong> Gather high-resolution digital elevation models (DEMs), satellite imagery, and geological maps from sources such as Google Earth Engine.</li>
-        <li><strong>Model Development:</strong> Train physics-informed neural networks (PINNs) and deep operator methods that integrate conservation laws (mass, momentum, energy) to simulate key processes like ice flow, sediment transport, and subglacial erosion.</li>
-        <li><strong>4D Reconstruction:</strong> Develop dynamic, time-dependent models that reconstruct the evolution of glacial landforms, capturing both static morphology and simulated dynamic events (e.g., subglacial floods, debris flows).</li>
+        <li><strong>Data Acquisition:</strong> Gather high-resolution DEMs, satellite imagery, and geological maps from sources such as Google Earth Engine.</li>
+        <li><strong>Model Development:</strong> Train physics-informed neural networks (PINNs) and deep operator methods that integrate conservation laws (mass, momentum, energy) to simulate processes like ice flow and sediment transport.</li>
+        <li><strong>4D Reconstruction:</strong> Create dynamic, time-dependent models that capture the evolution of glacial landforms, allowing for interactive exploration and hypothesis testing.</li>
       </ul>
       <details>
         <summary>Extended Methodology Details</summary>
         <div>
           <p>
-            Starting with harmonized geospatial datasets, the model leverages published simulation frameworks (e.g., FastScape, Yuan et al. 2019, GoSPL) as baseline parameters. The physics-informed ML models are calibrated against regional geological surveys and historical data, ensuring that the reconstructed 4D model accurately reflects the evolution of glacial features. This framework enables both retrospective reconstruction and prospective simulation, providing a robust tool for analyzing the interplay of climate, sedimentary processes, and ice dynamics.
+            Beginning with harmonized geospatial datasets, I leverage published simulation frameworks (e.g., FastScape, studies by Yuan et al. 2019, and GoSPL) to set baseline parameters. The ML models are trained to detect patterns in terrain features, such as the shape and distribution of drumlins, and to infer the underlying physical processes. This results in a comprehensive 4D model that both reconstructs historical glaciation events and simulates dynamic processes like subglacial floods and debris flows.
           </p>
         </div>
       </details>
+      <!-- Neural network schematic image from Wikimedia Commons -->
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Artificial_neural_network.svg/800px-Artificial_neural_network.svg.png" alt="Neural Operator Schematic" />
     </div>
 
     <!-- Project Timeline & Funding Goals -->
@@ -146,7 +151,7 @@
         <summary>Extended Timeline & Funding Details</summary>
         <div>
           <p>
-            In Phase 1, I will process existing LiDAR, DEM, and satellite imagery to establish baseline terrain models. In Phase 2, I will develop and calibrate the physics-informed ML models using these datasets. Phase 3 will produce a dynamic 4D reconstruction of glacial evolution, while Phase 4 focuses on building an immersive interface in Unity and validating the model with targeted field data. Phase 5 covers system deployment and scaling to broader applications.
+            In Phase 1, I will process existing LiDAR, DEM, and satellite imagery to establish baseline terrain models. In Phase 2, I will develop and calibrate physics-informed ML models using these datasets and published simulation frameworks. Phase 3 focuses on constructing the dynamic 4D reconstruction for glacial evolution, while Phase 4 involves building an immersive interface in Unity and validating the model with targeted field data. Phase 5 covers system deployment and scaling for broader application.
           </p>
         </div>
       </details>
@@ -160,15 +165,15 @@
         <div>
           <h3>Regional & Institutional Collaborations</h3>
           <p>
-            Potential partnerships with local institutions such as the Museum of the Earth (Ithaca) and the Finger Lakes Land Trust offer access to regional geological surveys and historical data.
+            Potential partners include local institutions such as the Museum of the Earth (Ithaca) and the Finger Lakes Land Trust, which provide regional geological surveys and historical data.
           </p>
           <h3>Federal & Early-Career Programs</h3>
           <p>
-            Opportunities exist through federal funding programs like NASA’s ROSES, which support innovative research in Earth and space sciences. Such programs can help scale this project and integrate high-resolution local data with global models.
+            Opportunities exist through federal programs like NASA’s ROSES, which support innovative Earth science research. These programs can facilitate the integration of high-resolution local data with global climate and ice-sheet models.
           </p>
           <h3>Interdisciplinary Research</h3>
           <p>
-            Collaborations with experts in applied mathematics, engineering, and sedimentology can refine the modeling techniques and expand the project’s predictive capabilities.
+            Collaborations with experts in applied mathematics, engineering, sedimentology, and geophysical modeling will further enhance model accuracy and predictive capabilities.
           </p>
         </div>
       </details>
@@ -178,13 +183,13 @@
     <div class="section-card">
       <h2>Domain-Specific Background</h2>
       <p>
-        Understanding glacial landscape evolution requires a quantitative approach that integrates geophysical data with robust physical models.
+        A quantitative understanding of glacial landscape evolution requires integrating geophysical data with robust physical models.
       </p>
       <details>
         <summary>Extended Domain Background</summary>
         <div>
           <p>
-            Detailed digital terrain analysis shows that the morphology of elliptical mounds (drumlins) records the history of glacial processes. In the Finger Lakes region, influences from the Catskills delta and ancient inland seas have produced diverse sedimentary layers that were later reworked by glaciation. By quantitatively modeling these processes, the framework can derive geomorphic transport laws and elucidate how climate, geology, and biotic factors interact to shape the landscape.
+            Detailed digital terrain analysis shows that the morphology of elliptical mounds (drumlins) records the interplay of ice dynamics, sediment transport, and depositional processes. In the Finger Lakes region, influences from the Catskills delta and ancient inland seas have produced diverse sedimentary layers that were later reshaped by glaciation. This project aims to derive and validate geomorphic transport laws that capture these processes, improving our understanding of how climate, geology, and biotic factors drive landscape evolution.
           </p>
         </div>
       </details>
@@ -226,7 +231,7 @@
       <p><strong>M.S. Applied Data Science, Syracuse University</strong><br>
          Researcher, Physics Department, BioInspired Institute</p>
       <p>
-        I develop AI-driven computational models to reconstruct and simulate glacial geomorphology and landscape dynamics. By integrating remote sensing, geospatial modeling, and physics-informed machine learning, I analyze key processes such as ice flow, sediment transport, and subglacial hydrology.
+        I develop AI-driven computational models to reconstruct and simulate glacial geomorphology and landscape dynamics. By integrating remote sensing, geospatial modeling, and physics-informed ML, I analyze key processes such as ice flow, sediment transport, and subglacial hydrology.
       </p>
       <p>
         I am actively seeking collaborations for joint proposals, proof-of-concept studies, and remote work opportunities.
@@ -235,13 +240,13 @@
         <summary>More about me</summary>
         <div>
           <p>
-            My research builds a dynamic 4D system that quantitatively reconstructs the evolution of glacial landforms in the Finger Lakes region. This framework links detailed geological records with predictive simulations to provide a comprehensive understanding of glacial processes. By leveraging physics-informed ML, I aim to refine models that capture the interplay of climate, sedimentation, and ice dynamics.
+            My research builds a dynamic 4D system that quantitatively reconstructs the evolution of glacial landforms in the Finger Lakes region. This framework connects detailed geological records with predictive simulations, offering a robust tool for testing hypotheses about past and future glacial processes. Through physics-informed ML, I aim to refine models that capture the interplay of climate, sedimentation, and ice dynamics.
           </p>
           <p>
-            With practical experience in both neuro biophysics and marine conservation research, I combine rigorous AI techniques with real-world data to inform environmental decision-making. My interdisciplinary background uniquely positions me to integrate cutting-edge computational methods with field observations.
+            With practical experience in developing computer vision tools in neuro biophysics and applying ML to marine conservation, I bring an interdisciplinary perspective to addressing complex environmental challenges.
           </p>
           <p>
-            If you’re interested in advanced modeling support or custom AI applications, I’d welcome the opportunity to collaborate.
+            If you’re interested in advanced modeling support or custom AI applications, I welcome the opportunity to collaborate.
           </p>
           <p>
             Contact:<br>
