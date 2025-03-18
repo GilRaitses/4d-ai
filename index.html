@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Physics-informed AI Modeling of Glacial Geomorphology</title>
+  <title>Physics-Informed Neural Operator Framework for 4D Process Modeling</title>
   <style>
-    /* Dark-to-glacial gradient background (from dark #121212 to dirty blue ice #3b5b7a),
+    /* Dark-to-glacial gradient background (from dark #121212 to dirty glacial blue #3b5b7a),
        mobile friendly, Garamond-inspired */
     body {
       margin: 0;
@@ -24,6 +24,11 @@
       margin: 0;
       font-size: 2.8em;
       color: #aee0f2;
+    }
+    header.title-slide h2 {
+      margin: 0.3em 0;
+      font-size: 1.6em;
+      color: #f5f5f5;
     }
     header.title-slide p {
       margin: 0.3em 0;
@@ -77,25 +82,27 @@
   </style>
 </head>
 <body>
+
   <!-- Title Slide -->
   <header class="title-slide">
-  <h1>A Physics-Informed Neural Operator Framework for Multi-Scale 4D Process Modeling</h1>
-  <h2>Reconstructing Glacial Landscapes in the Finger Lakes Region</h2>
-  <p>Gil Raitses</p>
-  <p>Syracuse University | Researcher, Physics Department</p>
-  <p>BioInspired Institute</p>
-  <p><a href="https://orcid.org/0009-0008-5182-0013" target="_blank" style="color: #aee0f2;">ORCID Profile</a></p>
+    <h1>A Physics-Informed Neural Operator Framework for Multi-Scale 4D Process Modeling</h1>
+    <h2>Reconstructing Glacial Landscapes in the Finger Lakes Region</h2>
+    <p>Gil Raitses</p>
+    <p>Syracuse University | Researcher, Physics Department</p>
+    <p>BioInspired Institute</p>
+    <p><a href="https://orcid.org/0009-0008-5182-0013" target="_blank">ORCID Profile</a></p>
   </header>
-
+  
   <div class="container">
+
     <!-- Project Overview -->
     <div class="section-card">
       <h2>Project Overview</h2>
       <p>
-        This project develops a physics-informed machine learning system for 4D modeling of glacial geomorphology. Focusing on the Finger Lakes region—a natural laboratory with a detailed record of glacial processes influenced by the Catskills delta and ancient inland seas—this tool integrates high-resolution remote sensing data, geological maps, and established simulation models to quantitatively reconstruct landscape evolution.
+        This project develops a physics-informed AI framework for creating dynamic 4D models that capture the evolution of glacial geomorphology. Focusing on the Finger Lakes region, the framework integrates high-resolution remote sensing data, geological maps, and established simulation models to quantitatively reconstruct how past glacial processes have shaped the landscape.
       </p>
       <p>
-        The system provides interactive visualizations of both the static morphology and dynamic evolution of glacial landforms, enabling researchers to analyze past ice flow, sediment transport, and the impact of climatic and ecological factors on landscape development.
+        The system not only reconstructs historical landform evolution but also provides an interactive platform to simulate and test dynamic processes, offering detailed insights into ice flow, sediment transport, and subglacial dynamics.
       </p>
     </div>
 
@@ -103,18 +110,18 @@
     <div class="section-card">
       <h2>Methodology</h2>
       <p>
-        My approach combines rigorous data integration with physics-informed machine learning to reconstruct and simulate glacial landscape dynamics.
+        My approach combines data-driven, physics-informed machine learning with advanced geospatial analysis to build a comprehensive 4D model of glacial landscape evolution.
       </p>
       <ul>
-        <li><strong>Data Acquisition:</strong> Collect high-resolution DEMs, satellite imagery, and geological maps (including regional surveys and historical data) via Google Earth Engine and other sources.</li>
-        <li><strong>Model Development:</strong> Train physics-informed neural networks (PINNs) and deep operator methods, embedding conservation laws (mass, momentum, energy) to model processes like ice flow, sediment transport, and subglacial erosion.</li>
-        <li><strong>4D Reconstruction:</strong> Develop a dynamic model that captures spatial and temporal evolution—documenting the influence of depositional events (e.g., from the Catskills delta) and the resulting glacial processes.</li>
+        <li><strong>Data Acquisition:</strong> Gather high-resolution digital elevation models (DEMs), satellite imagery, and geological maps from sources such as Google Earth Engine.</li>
+        <li><strong>Model Development:</strong> Train physics-informed neural networks (PINNs) and deep operator methods that integrate conservation laws (mass, momentum, energy) to simulate key processes like ice flow, sediment transport, and subglacial erosion.</li>
+        <li><strong>4D Reconstruction:</strong> Develop dynamic, time-dependent models that reconstruct the evolution of glacial landforms, capturing both static morphology and simulated dynamic events (e.g., subglacial floods, debris flows).</li>
       </ul>
       <details>
         <summary>Extended Methodology Details</summary>
         <div>
           <p>
-            Starting with harmonized geospatial datasets, the process incorporates simulation frameworks such as FastScape, along with parameters and baseline behaviors derived from published studies (e.g., Yuan et al. 2019, GoSPL). The ML models are trained to recognize patterns in terrain features—such as the shape and distribution of drumlins—and to infer underlying physical processes. The result is a comprehensive 4D model that not only reconstructs historical glaciation events but also allows simulation of unrecorded dynamic processes like subglacial floods and debris flows.
+            Starting with harmonized geospatial datasets, the model leverages published simulation frameworks (e.g., FastScape, Yuan et al. 2019, GoSPL) as baseline parameters. The physics-informed ML models are calibrated against regional geological surveys and historical data, ensuring that the reconstructed 4D model accurately reflects the evolution of glacial features. This framework enables both retrospective reconstruction and prospective simulation, providing a robust tool for analyzing the interplay of climate, sedimentary processes, and ice dynamics.
           </p>
         </div>
       </details>
@@ -139,46 +146,45 @@
         <summary>Extended Timeline & Funding Details</summary>
         <div>
           <p>
-            Phase 1 involves processing existing LiDAR, DEM, and satellite imagery and establishing baseline terrain models. Phase 2 focuses on training the ML models with these datasets, calibrated against published simulation frameworks and geological surveys. Phase 3 develops the dynamic 4D reconstruction, enabling interactive exploration of glacial evolution. Phase 4 refines the user interface using platforms like Unity and incorporates targeted field validation, while Phase 5 covers full system deployment and scaling.
+            In Phase 1, I will process existing LiDAR, DEM, and satellite imagery to establish baseline terrain models. In Phase 2, I will develop and calibrate the physics-informed ML models using these datasets. Phase 3 will produce a dynamic 4D reconstruction of glacial evolution, while Phase 4 focuses on building an immersive interface in Unity and validating the model with targeted field data. Phase 5 covers system deployment and scaling to broader applications.
           </p>
         </div>
       </details>
     </div>
 
-<div class="section-card">
-  <h2>Partners & Collaborations</h2>
-  <details>
-    <summary>Extended Collaborations</summary>
-    <div>
-      <h3>Regional & Institutional Collaborations</h3>
-      <p>
-        Potential partners include local institutions such as the Museum of the Earth (Ithaca) and the Finger Lakes Land Trust, which provide access to regional geological surveys and historical data.
-      </p>
-      
-      <h3>Federal Partnerships & Early Career Programs</h3>
-      <p>
-        Opportunities exist through federal agency programs designed for early career researchers. For example, NASA’s ROSES (Research Opportunities in Space and Earth Sciences) program supports innovative projects in Earth and space sciences. By aligning my research with these initiatives, there is a strong potential for collaboration and funding to enhance and scale the modeling system.
-      </p>
-      
-      <h3>Interdisciplinary Research & Global Modeling</h3>
-      <p>
-        Collaborations with groups specializing in geophysical modeling, climate dynamics, and sedimentology can help integrate high-resolution local data into global-scale simulations. This interdisciplinary approach is key to refining predictive models of glacial dynamics and environmental change.
-      </p>
+    <!-- Partners & Collaborations -->
+    <div class="section-card">
+      <h2>Partners & Collaborations</h2>
+      <details>
+        <summary>Extended Collaborations</summary>
+        <div>
+          <h3>Regional & Institutional Collaborations</h3>
+          <p>
+            Potential partnerships with local institutions such as the Museum of the Earth (Ithaca) and the Finger Lakes Land Trust offer access to regional geological surveys and historical data.
+          </p>
+          <h3>Federal & Early-Career Programs</h3>
+          <p>
+            Opportunities exist through federal funding programs like NASA’s ROSES, which support innovative research in Earth and space sciences. Such programs can help scale this project and integrate high-resolution local data with global models.
+          </p>
+          <h3>Interdisciplinary Research</h3>
+          <p>
+            Collaborations with experts in applied mathematics, engineering, and sedimentology can refine the modeling techniques and expand the project’s predictive capabilities.
+          </p>
+        </div>
+      </details>
     </div>
-  </details>
-</div>
 
     <!-- Domain-Specific Background -->
     <div class="section-card">
       <h2>Domain-Specific Background</h2>
       <p>
-        A comprehensive understanding of glacial landforms requires integrating insights from sedimentology, geomorphology, computational physics, and remote sensing.
+        Understanding glacial landscape evolution requires a quantitative approach that integrates geophysical data with robust physical models.
       </p>
       <details>
         <summary>Extended Domain Background</summary>
         <div>
           <p>
-            Detailed digital terrain analysis demonstrates that the morphology of elliptical mounds (drumlins) records the interplay of ice dynamics, sediment transport, and depositional processes. In the Finger Lakes region, the influence of the Catskills delta and ancient inland seas contributed to the varied sedimentary layers that were later reshaped by glaciation. Quantitatively modeling these processes provides a foundation for deriving transport laws and understanding the coupled effects of climate, geology, and biota on landscape evolution.
+            Detailed digital terrain analysis shows that the morphology of elliptical mounds (drumlins) records the history of glacial processes. In the Finger Lakes region, influences from the Catskills delta and ancient inland seas have produced diverse sedimentary layers that were later reworked by glaciation. By quantitatively modeling these processes, the framework can derive geomorphic transport laws and elucidate how climate, geology, and biotic factors interact to shape the landscape.
           </p>
         </div>
       </details>
@@ -214,7 +220,7 @@
       </details>
     </div>
 
-    <!-- Final Section: About Gil Raitses -->
+    <!-- About Gil Raitses -->
     <div class="section-card">
       <h2>About Gil Raitses</h2>
       <p><strong>M.S. Applied Data Science, Syracuse University</strong><br>
@@ -229,10 +235,10 @@
         <summary>More about me</summary>
         <div>
           <p>
-            My research builds a dynamic 4D system that quantitatively reconstructs the evolution of glacial landforms in the Finger Lakes region. This approach links geological records—shaped by events like the Catskills delta and the ancient inland sea—with predictive simulations of glacial processes. The outcome is a versatile tool for testing hypotheses, refining transport laws, and exploring environmental change.
+            My research builds a dynamic 4D system that quantitatively reconstructs the evolution of glacial landforms in the Finger Lakes region. This framework links detailed geological records with predictive simulations to provide a comprehensive understanding of glacial processes. By leveraging physics-informed ML, I aim to refine models that capture the interplay of climate, sedimentation, and ice dynamics.
           </p>
           <p>
-            With experience in developing computer vision tools in neuro biophysics and applying machine learning in marine conservation, I bring a practical, interdisciplinary perspective to the challenge of modeling Earth’s complex glacial history.
+            With practical experience in both neuro biophysics and marine conservation research, I combine rigorous AI techniques with real-world data to inform environmental decision-making. My interdisciplinary background uniquely positions me to integrate cutting-edge computational methods with field observations.
           </p>
           <p>
             If you’re interested in advanced modeling support or custom AI applications, I’d welcome the opportunity to collaborate.
@@ -251,5 +257,6 @@
   <footer>
     <p>© 2025 Gil Raitses. All Rights Reserved.</p>
   </footer>
+
 </body>
 </html>
